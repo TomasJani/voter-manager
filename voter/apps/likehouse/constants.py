@@ -1,0 +1,3 @@
+UP_VOTES = 25
+
+DOWN_VOTES = 25

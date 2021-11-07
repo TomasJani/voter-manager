@@ -1,3 +1,13 @@
+# Extracted files
+inspections/
+ids/
+
+# CatBoost
+catboost_info/
+
+# Idea
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
