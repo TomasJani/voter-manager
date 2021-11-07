@@ -34,19 +34,19 @@ jobs:
         python-version: 3.9
 
     - name: Setup Enviroment
-      run: sudo apt-get update && sudo apt-get -y install libfuzzy-dev && python3.9 -m pip install pipenv
+      run: sudo apt-get update && sudo apt-get -y install libfuzzy-dev && python3.9 -m pip install poetry
 
     - name: Install packages
-      run: python3.9 -m pipenv install -d
+      run: python3.9 -m poetry install -d
 
     - name: Black-CI
-      run: python3.9 -m pipenv run make black-ci
+      run: python3.9 -m poetry run make black-ci
 
     - name: Isort-CI
-      run: python3.9 -m pipenv run make isort-ci
+      run: python3.9 -m poetry run make isort-ci
 
     - name: Flake8-CI
-      run: python3.9 -m pipenv run make flake8-ci
+      run: python3.9 -m poetry run make flake8-ci
 
     - name: Pre-Commit
-      run: python3.9 -m pipenv run make precommit
+      run: python3.9 -m poetry run make precommit
