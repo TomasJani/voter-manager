@@ -5,7 +5,7 @@ description = ""
 authors = ["Tomas Janicek <tomas.janicek@redampsecurity.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9.8"
+python = "^3.9"
 stem = "^1.8.0"
 
 [tool.poetry.dev-dependencies]
